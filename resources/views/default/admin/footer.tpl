@@ -1,9 +1,5 @@
 <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-        Made with Love
-    </div>
-    <strong>Copyright &copy; 2016 <a href="#">{$config['appName']}</a> </strong>
-    All rights reserved. Powered by <b>ss-panel</b> {$config['version']} | <a href="/tos">服务条款 </a>
+    版权所有 &copy 2016 flyspeeder.com &nbsp;<a class="white-text" href="/tos">服务条款</a>
 </footer>
 </div><!-- ./wrapper -->
 

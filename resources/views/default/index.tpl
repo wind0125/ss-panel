@@ -29,10 +29,10 @@
             <div class="col s12 m4">
                 <div class="icon-block">
                     <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                    <h5 class="center">Super Fast</h5>
+                    <h5 class="center">低延迟，大宽带</h5>
 
                     <p class="light">
-                        Bleeding edge techniques using Asynchronous I/O and Event-driven programming.
+                        百兆国内直连，G口大宽带，锐速加速，严格控制单个服务器资源，合理分配端口,非传统SS服务商分配方法。
                     </p>
                 </div>
             </div>
@@ -40,10 +40,10 @@
             <div class="col s12 m4">
                 <div class="icon-block">
                     <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                    <h5 class="center">Open Source</h5>
+                    <h5 class="center">资源分区，百人独服</h5>
 
                     <p class="light">
-                        Totally free and open source. A worldwide community devoted to deliver bug-free code and long-term support.
+                        用户分配到不同区，独享到各个服务器，每个区的用户互不影响。A区出现问题，不会影响他区。资源严格控制，服务器负载小，速度快，特别是宽带利用率。
                     </p>
                 </div>
             </div>
@@ -51,10 +51,10 @@
             <div class="col s12 m4">
                 <div class="icon-block">
                     <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                    <h5 class="center">Easy to work with</h5>
+                    <h5 class="center">设置简单，方便快捷</h5>
 
                     <p class="light">
-                        Avaliable on multiple platforms, including PC, MAC, Mobile (Android and iOS) and Routers (OpenWRT).
+                        跨平台使用(Window,MAC,Linux,IOS,Android)，下载客户端，根据需要配置的客户端进行配置，打开系统代理，畅游网络。。IOS用户可以下载“爱思助手”，免费安装shadowrocket客户端。建议去appstore购买正版。
                     </p>
                 </div>
             </div>

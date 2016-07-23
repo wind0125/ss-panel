@@ -114,9 +114,9 @@
 
                                 <div class="col-sm-9">
                                     <div class="input-group">
-                                        <input type="text" id="method" placeholder="输入新加密方式" class="form-control">
+                                        <input type="text" id="method" placeholder="aes-256-cfb" class="form-control" disabled="disabled">
                                         <div class="input-group-btn">
-                                            <button type="submit" id="method-update" class="btn btn-primary">修改</button>
+                                            <button type="submit" id="method-update" class="btn btn-primary" disabled="disabled">修改</button>
                                         </div>
                                     </div>
                                 </div>
