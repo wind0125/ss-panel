@@ -69,6 +69,32 @@
             <div class="col-md-6">
                 <div class="box box-primary">
                     <div class="box-header">
+                        <i class="fa  fa-paper-plane"></i>
+
+                        <h3 class="box-title">连接信息</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <dl class="dl-horizontal">
+                            <dt>端口</dt>
+                            <dd>{$user->port}</dd>
+                            <dt>密码</dt>
+                            <dd>{$user->passwd}</dd>
+                            <dt>自定义加密方式</dt>
+                            <dd>{$user->method}</dd>
+                            <dt>上次使用</dt>
+                            <dd>{$user->lastSsTime()}</dd>
+                        </dl>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col (right) -->
+
+            <div class="col-md-6">
+                <div class="box box-primary">
+                    <div class="box-header">
                         <i class="fa fa-pencil"></i>
 
                         <h3 class="box-title">签到获取流量</h3>
@@ -93,24 +119,20 @@
             </div>
             <!-- /.col (right) -->
 
+
+
             <div class="col-md-6">
                 <div class="box box-primary">
                     <div class="box-header">
-                        <i class="fa  fa-paper-plane"></i>
+                        <i class="fa  fa-cloud-download"></i>
 
-                        <h3 class="box-title">连接信息</h3>
+                        <h3 class="box-title">工具下载</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
                         <dl class="dl-horizontal">
-                            <dt>端口</dt>
-                            <dd>{$user->port}</dd>
-                            <dt>密码</dt>
-                            <dd>{$user->passwd}</dd>
-                            <dt>自定义加密方式</dt>
-                            <dd>{$user->method}</dd>
-                            <dt>上次使用</dt>
-                            <dd>{$user->lastSsTime()}</dd>
+                            电脑版<a href="http://www.flyspeeder.com//downloads/Shadowsocks-3.0.zip">（点击下载）</a>
+                            安卓版<a href="http://www.flyspeeder.com//downloads/shadowsocks_2.10.8.apk">（点击下载）</a>
                         </dl>
                     </div>
                     <!-- /.box-body -->
@@ -118,6 +140,9 @@
                 <!-- /.box -->
             </div>
             <!-- /.col (right) -->
+
+
+
         </div>
         <!-- /.row --><!-- END PROGRESS BARS -->
     </section>
