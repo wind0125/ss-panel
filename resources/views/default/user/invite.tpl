@@ -54,14 +54,22 @@
                             </tr>
                             </thead>
                             <tbody>
-                            {foreach $codes as $code}
+                            {*{foreach $codes as $code}
                                 <tr>
                                     <td><b>{$code->id}</b></td>
                                     <td><a href="/auth/register?code={$code->code}" target="_blank">{$code->code}</a>
                                     </td>
                                     <td>可用</td>
                                 </tr>
-                            {/foreach}
+                            {/foreach}*}
+                            {for $i=0; $i<count($codes); $i++}
+                                <tr>
+                                    <td><b>{$i+1}</b></td>
+                                    <td><a href="/auth/register?code={$codes[$i]->code}" target="_blank">{$codes[$i]->code}</a>
+                                    </td>
+                                    <td>可用</td>
+                                </tr>
+                            {/for}
                             </tbody>
                         </table>
                     </div>
