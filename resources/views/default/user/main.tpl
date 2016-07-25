@@ -16,6 +16,8 @@
          folder instead of downloading all of them to reduce the load. -->
     <link href="/assets/public/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css"/>
 
+    <link href="/assets/public/css/admin-patch.css" rel="stylesheet" type="text/css"/>
+
     <!-- jQuery 2.1.3 -->
     <script src="/assets/public/js/jquery.min.js"></script>
 

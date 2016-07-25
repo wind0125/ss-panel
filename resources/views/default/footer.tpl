@@ -47,8 +47,8 @@
 	<div class="floatShadow">
 		<ul class="floatDqq" style="margin-top:0;">
 			<li style="padding-left:0px;"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2657197259&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq4.png" align="absmiddle">&nbsp;&nbsp; 小飞客服1</a></li>
-			<li style="padding-left:0px;"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=383841433&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq.png" align="absmiddle">&nbsp;&nbsp;&nbsp;小飞客服2</a></li>
-			<li style="padding-left:0px;"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=383841433&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq3.png" align="absmiddle">&nbsp;&nbsp; 小飞客服3</a></li>
+			<li style="padding-left:0px;"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3505429641&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq.png" align="absmiddle">&nbsp;&nbsp;&nbsp;小飞客服2</a></li>
+			<li style="padding-left:0px;"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=624283530&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq3.png" align="absmiddle">&nbsp;&nbsp; 小飞客服3</a></li>
 		</ul>
 		<!--<div class="floatDtxt">热线电话</div>
         <div class="floatDtel"><img src="images/online_phone.jpg" width="155" height="45" alt=""></div>

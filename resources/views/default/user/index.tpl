@@ -141,6 +141,27 @@
             </div>
             <!-- /.col (right) -->
 
+            <div class="col-md-6">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <i class="fa  fa-qq"></i>
+
+                        <h3 class="box-title">客服QQ</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <dl class="dl-horizontal">
+                            <a target="_blank" class="admin-kefu" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2657197259&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq4.png" align="absmiddle">&nbsp;&nbsp; 小飞客服1</a>
+                            <a target="_blank" class="admin-kefu" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3505429641&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq.png" align="absmiddle">&nbsp;&nbsp;&nbsp;小飞客服2</a>
+                            <a target="_blank" class="admin-kefu" href="http://wpa.qq.com/msgrd?v=3&amp;uin=624283530&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq3.png" align="absmiddle">&nbsp;&nbsp; 小飞客服3</a>
+
+                        </dl>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col (right) -->
 
 
         </div>
