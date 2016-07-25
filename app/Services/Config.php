@@ -11,6 +11,7 @@ class Config extends PongtanConfig
     {
         return [
             "appName" => self::getAppName(),
+            "appNameEn" => self::getEnAppName(),
             "version" => self::get("version"),
             "baseUrl" => self::get("baseUrl"),
             "checkinTime" => self::get("checkinTime"),
@@ -26,6 +27,15 @@ class Config extends PongtanConfig
             return self::get("appName");
         }
         return $appName;
+    }
+
+    public static function getEnAppName()
+    {
+        $appNameEn = DbConfig::get('app-name-en');
+        if ($appNameEn == null || $appNameEn == "") {
+            return self::get("appNameEn");
+        }
+        return $appNameEn;
     }
 
     public static function getDbConfig()

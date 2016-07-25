@@ -5,6 +5,13 @@ body{
     padding-bottom:80px;
 }
 
+@media only screen and (max-width: 992px){
+    nav .brand-logo {
+        left: 36%;
+
+    }
+}
+
 
 #rightArrow {
     width: 50px;
