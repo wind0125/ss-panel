@@ -131,8 +131,16 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                         <dl class="dl-horizontal">
-                            电脑版<a href="http://www.flyspeeder.com//downloads/Shadowsocks-3.0.zip">（点击下载）</a>
-                            安卓版<a href="http://www.flyspeeder.com//downloads/shadowsocks_2.10.8.apk">（点击下载）</a>
+                            <p>Windows电脑版<a href="http://www.flyspeeder.com//downloads/Shadowsocks-3.0.zip">（点击下载）</a>
+                                <a href="http://www.flyspeeder.com/downloads/windows%E5%B0%8F%E9%A3%9E%E5%8A%A0%E9%80%9F%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.doc">使用教程</a>
+                            </p>
+                            <p>安卓版<a href="http://www.flyspeeder.com//downloads/shadowsocks_2.10.8.apk">（点击下载）</a>
+                                <a href="http://www.flyspeeder.com/downloads/%E5%AE%89%E5%8D%93%E7%89%88%E5%B0%8F%E9%A3%9E%E5%8A%A0%E9%80%9F%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.doc">使用教程</a>
+                            </p>
+                            <p>Mac OS<a href="http://www.flyspeeder.com/downloads/ShadowsocksX-2.6.3.zip">（点击下载）</a>
+                                <a href="http://www.flyspeeder.com/downloads/MAC_OS%E5%B0%8F%E9%A3%9E%E5%8A%A0%E9%80%9F%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.doc">使用教程</a>
+                            </p>
+                            <p>iphone和ipad不需要下载工具，具体设置方法请咨询客服</p>
                         </dl>
                     </div>
                     <!-- /.box-body -->
