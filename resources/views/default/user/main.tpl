@@ -33,7 +33,9 @@
 <div class="wrapper">
 
     <header class="main-header">
-        <a href="/user" class="logo">{$config["appName"]}</a>
+        <a href="/user" class="logo">
+            <img class="logo-fly" src="/assets/public/img/logo-fly.png">
+            {$config["appName"]}</a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->

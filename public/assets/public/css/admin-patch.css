@@ -8,3 +8,11 @@
 #checkin-msg{
     padding-bottom:10px;
 }
+.main-header .logo{
+    padding:0 15px 0 0;
+}
+.main-header .logo .logo-fly {
+    width: 88px;
+    height: 64px;
+    padding: 5px 5px 18px 15px;
+}

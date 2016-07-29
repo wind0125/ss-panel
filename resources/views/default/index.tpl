@@ -54,7 +54,7 @@
                     <h5 class="center">设置简单，方便快捷</h5>
 
                     <p class="light">
-                        跨平台使用(Window,MAC,Linux,IOS,Android)，下载客户端，根据需要配置的客户端进行配置，打开系统代理，畅游网络。。IOS用户可以下载“爱思助手”，免费安装shadowrocket客户端。建议去appstore购买正版。
+                        跨平台使用(Window,MAC,Linux,Android)，下载客户端，根据需要配置的客户端进行配置。IOS用户更有超简单配置，无需下载客户端，分分钟畅游网络。
                     </p>
                 </div>
             </div>
