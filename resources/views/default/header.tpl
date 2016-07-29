@@ -12,7 +12,9 @@
 </head>
 <body>
 <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">{$config["appNameEn"]}</a>
+    <div class="nav-wrapper container">
+        <img class="logo-fly" src="/assets/public/img/logo-fly.png">
+        <a id="logo-container" href="/" class="brand-logo">{$config["appNameEn"]}</a>
         <ul class="right hide-on-med-and-down">
             <li><a href="/">首页</a></li>
             {*<li><a href="https://shadowsocks.org/en/download/clients.html">客户端下载</a></li>
