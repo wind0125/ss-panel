@@ -75,6 +75,10 @@ body{
     padding: 0 14px;
 }
 
+nav .button-collapse{
+    float:right;
+}
+
 /* 窗口宽度<768,设计宽度=640 */
 @media screen and (max-width:767px){
     #floatDivBoxs {
@@ -97,5 +101,57 @@ body{
         right: 170px;
         z-index: 999;
     }
+    .logo-fly{
+        margin-left:-20px;
+        width:64px;
+        height:54px;
+    }
 
+}
+
+/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:639px){
+    #floatDivBoxs {
+        width: 170px;
+        background: #fff;
+        position: fixed;
+        top: 150px;
+        right: 0;
+        z-index: 999;
+        color: #666;
+        font-size: 12px;
+
+    }
+    #rightArrow {
+        width: 50px;
+        height: 45px;
+        background: url(../img/online_arrow.jpg) no-repeat;
+        position: fixed;
+        top: 150px;
+        right: 170px;
+        z-index: 999;
+    }
+}
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+    #floatDivBoxs {
+        width: 170px;
+        background: #fff;
+        position: fixed;
+        top: 150px;
+        right: 0;
+        z-index: 999;
+        color: #666;
+        font-size: 12px;
+
+    }
+    #rightArrow {
+        width: 50px;
+        height: 45px;
+        background: url(../img/online_arrow.jpg) no-repeat;
+        position: fixed;
+        top: 150px;
+        right: 170px;
+        z-index: 999;
+    }
 }
