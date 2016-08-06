@@ -21,6 +21,9 @@
     <!-- jQuery 2.1.3 -->
     <script src="/assets/public/js/jquery.min.js"></script>
 
+    <script src=" /assets/public/js/jquery.qrcode.min.js "></script>
+    <script src="/assets/public/js/showQrcode.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

@@ -1,5 +1,6 @@
 {include file='user/main.tpl'}
 
+<div id="hidden-qrcode-info"  class="hidden">{$json_show}</div>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -35,8 +36,10 @@
                                         <img src="../assets/public/img/iconfont-server.png" alt="Server Node">
                                     </div>
                                     <div class="product-info">
-                                        <a href="./node/{$node->id}" class="product-title">{$node->name} <span
-                                                    class="label label-info pull-right">{$node->status}</span></a>
+                                        <a href="./node/{$node->id}" class="product-title">{$node->name}
+
+                                            <span class="label label-info pull-right">{$node->status}</span></a>
+                                        <button class="btn btn-primary" id="showQrcode" onclick="showQrcode('{$node->id}')">配置二维码</button>
                                         <p>
                                             {$node->info}
                                         </p>
@@ -86,9 +89,27 @@
 
 
         {/foreach}
+
+
     </section>
     <!-- /.content -->
 </div><!-- /.content-wrapper -->
 
+<div class="modal fade" id="qrcode-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">配置二维码</h4>
+            </div>
+            <div class="modal-body">
+                <div id="show-qrcode" class="text-center"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 {include file='user/footer.tpl'}

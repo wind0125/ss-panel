@@ -16,3 +16,4 @@ $('#rightArrow').click(function(){
         flag=1;
     }
 });
+

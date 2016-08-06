@@ -41,12 +41,37 @@ class UserController extends BaseController
         return $this->view()->assign('msg', $msg)->display('user/index.tpl');
     }
 
-    public function node($request, $response, $args)
+    /*public function node($request, $response, $args)
     {
         $msg = DbConfig::get('user-node');
         $user = Auth::getUser();
         $nodes = Node::where('type', 1)->orderBy('sort')->get();
         return $this->view()->assign('nodes', $nodes)->assign('user', $user)->assign('msg', $msg)->display('user/node.tpl');
+    }*/
+
+    public function node($request, $response, $args)
+    {
+        $msg = DbConfig::get('user-node');
+        $user = Auth::getUser();
+        $nodes = Node::where('type', 1)->orderBy('sort')->get();
+        $qrcodes = array();
+
+        foreach ($nodes as $node) {
+            $ary['server'] = $node->server;
+            $ary['server_port'] = $this->user->port;
+            $ary['password'] = $this->user->passwd;
+            $ary['method'] = $node->method;
+            if ($node->custom_method) {
+                $ary['method'] = $this->user->method;
+            }
+            $ssurl = $ary['method'] . ":" . $ary['password'] . "@" . $ary['server'] . ":" . $ary['server_port'];
+            $node_id = $node->id+'';
+            $qrcodes[$node_id] = "ss://" . base64_encode($ssurl);
+
+
+        }
+        $json_show = json_encode($qrcodes, JSON_PRETTY_PRINT);
+        return $this->view()->assign('nodes', $nodes)->assign('user', $user)->assign('msg', $msg)->assign('qrcodes', $qrcodes)->assign('json_show', $json_show)->display('user/node.tpl');
     }
 
 
