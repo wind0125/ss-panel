@@ -45,8 +45,8 @@ $app->group('/user', function () {
     $this->get('/node', 'App\Controllers\UserController:node');
     $this->get('/node/{id}', 'App\Controllers\UserController:nodeInfo');
     $this->get('/profile', 'App\Controllers\UserController:profile');
-    $this->get('/invite', 'App\Controllers\UserController:invite');
-    $this->post('/invite', 'App\Controllers\UserController:doInvite');
+//    $this->get('/invite', 'App\Controllers\UserController:invite');
+//    $this->post('/invite', 'App\Controllers\UserController:doInvite');
     $this->get('/edit', 'App\Controllers\UserController:edit');
     $this->post('/password', 'App\Controllers\UserController:updatePassword');
     $this->post('/sspwd', 'App\Controllers\UserController:updateSsPwd');
