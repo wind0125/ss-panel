@@ -15,11 +15,19 @@
     <section class="content">
         <!-- START PROGRESS BARS -->
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div class="callout callout-warning">
                     <h4>注意!</h4>
                     <p>请勿在任何地方公开节点地址！</p>
                     <p>流量比例为0.5即使用1000MB按照500MB流量记录记录结算.</p>
+                    {$msg}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="callout callout-info">
+                    <h4>说明</h4>
+                    <p>点击“显示二维码”按钮可查看相应节点的配置二维码</p>
+                    <p>在shodowsocks中点击扫描二维码即可导入节点配置</p>
                     {$msg}
                 </div>
             </div>
