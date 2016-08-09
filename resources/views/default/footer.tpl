@@ -74,6 +74,12 @@
 <script src="/assets/materialize/js/init.js"></script>
 <script src="/assets/public/js/kefu.js"></script>
 
+<script src="/assets/public/js/move.js"></script>
+<script src="/assets/public/js/cookie.js"></script>
+<script src="/assets/public/js/notice.js"></script>
+
+
+
 
 </body>
 </html>

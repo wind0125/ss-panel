@@ -9,6 +9,7 @@
     <link href="/assets/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/assets/materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/assets/public/css/kefu.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/assets/public/css/notice.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 <nav class="light-blue lighten-1" role="navigation">
