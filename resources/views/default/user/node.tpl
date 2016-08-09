@@ -44,7 +44,7 @@
                                         <img src="../assets/public/img/iconfont-server.png" alt="Server Node">
                                     </div>
                                     <div class="product-info">
-                                        <a href="./node/{$node->id}" class="product-title">{$node->name}
+                                        <a class="product-title">{$node->name}
 
                                             <span class="label label-info pull-right">{$node->status}</span>
 
@@ -63,30 +63,30 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul class="nav nav-stacked">
-                                        <li><a href="./node/{$node->id}">节点地址 <span
+                                        <li><a>节点地址 <span
                                                         class="pull-right badge bg-blue">{$node->server}</span></a></li>
-                                        <li><a href="./node/{$node->id}">连接端口 <span
+                                        <li><a>连接端口 <span
                                                         class="pull-right badge bg-aqua">{$user->port}</span></a></li>
-                                        <li><a href="./node/{$node->id}">加密方式 <span
+                                        <li><a>加密方式 <span
                                                         class="pull-right badge bg-green">{if $node->custom_method == 1} {$user->method} {else} {$node->method} {/if}</span></a>
                                         </li>
-                                        <li><a href="./node/{$node->id}">负载: <span
+                                        <li><a>负载: <span
                                                         class="pull-right badge bg-green">{$node->getNodeLoad()}</span></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul class="nav nav-stacked">
-                                        <li><a href="./node/{$node->id}">流量比例 <span
+                                        <li><a>流量比例 <span
                                                         class="pull-right badge bg-blue">{$node->traffic_rate}</span></a>
                                         </li>
-                                        <li><a href="./node/{$node->id}">在线人数 <span
+                                        <li><a>在线人数 <span
                                                         class="pull-right badge bg-aqua">{$node->getOnlineUserCount()}</span></a>
                                         </li>
-                                        <li><a href="./node/{$node->id}">产生流量 <span
+                                        <li><a>产生流量 <span
                                                         class="pull-right badge bg-green">{$node->getTrafficFromLogs()}</span></a>
                                         </li>
-                                        <li><a href="./node/{$node->id}">Uptime: <span
+                                        <li><a>Uptime: <span
                                                         class="pull-right badge bg-green">{$node->getNodeUptime()}</span></a>
                                         </li>
                                     </ul>
