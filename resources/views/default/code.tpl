@@ -20,7 +20,7 @@
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>###</th>
+                            <th class="width30">###</th>
                             <th>邀请码 (点击邀请码进入注册页面)</th>
                            {* <th>状态</th>*}
                         </tr>

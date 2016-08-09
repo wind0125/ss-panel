@@ -14,6 +14,10 @@ body{
     padding-bottom: 0;
 }
 
+.width30{
+    width:30%;
+}
+
 @media only screen and (max-width: 992px){
     nav .brand-logo {
         left: 36%;
