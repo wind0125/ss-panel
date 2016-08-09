@@ -46,8 +46,10 @@
                                     <div class="product-info">
                                         <a href="./node/{$node->id}" class="product-title">{$node->name}
 
-                                            <span class="label label-info pull-right">{$node->status}</span></a>
-                                        <button class="btn btn-primary" id="showQrcode" onclick="showQrcode('{$node->id}')">配置二维码</button>
+                                            <span class="label label-info pull-right">{$node->status}</span>
+
+                                        </a>
+                                        <div class="label label-info showQrcode"  onclick="showQrcode('{$node->id}')">显示二维码</div>
                                         <p>
                                             {$node->info}
                                         </p>
