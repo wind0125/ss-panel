@@ -49,7 +49,9 @@
                                             <span class="label label-info pull-right">{$node->status}</span>
 
                                         </a>
-                                        <div class="label label-info showQrcode"  onclick="showQrcode('{$node->id}')">显示二维码</div>
+                                        <div class="label label-info showQrcode"  onclick="showQrcode('{$node->id}')">
+                                            <i class="fa fa-qrcode qr-icon"></i>
+                                            显示二维码</div>
                                         <p>
                                             {$node->info}
                                         </p>
