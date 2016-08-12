@@ -78,6 +78,9 @@
 <script src="/assets/public/js/cookie.js"></script>
 <script src="/assets/public/js/notice.js"></script>
 
+<script src="/assets/public/js/jquery-ui.min.js"></script>
+<script src="/assets/public/js/howdydo-bar.js"></script>
+
 
 
 

@@ -12,6 +12,15 @@
     <link href="/assets/public/css/notice.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+
+{*notice*}
+<div id="notice">
+    {*<h1>公告</h1>*}
+    <div id="heading">公告：好友邀请机制已关闭，请关注本站，获取公共邀请码进行注册。
+        公共邀请码，将不定期发放，请关注本站公告信息。</div>
+</div>
+
+
 <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
         <img class="logo-fly" src="/assets/public/img/logo-fly.png">
