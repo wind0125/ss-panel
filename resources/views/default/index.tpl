@@ -68,6 +68,7 @@
     </div>
 </div>
 
+{*
 <div class="float_layer" id="miaov_float_layer" style="z-index:10001;">
     <h2>
         <b>公告</b>
@@ -83,6 +84,7 @@
         </div>
     </div>
 </div>
+*}
 
 
 {include file='footer.tpl'}

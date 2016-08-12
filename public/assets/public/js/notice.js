@@ -1,6 +1,7 @@
 /**
  * Created by fanny on 16-8-9.
  */
+/*
 $(function (){
     if($.cookie("isClose") != 'yes')
     {
@@ -57,4 +58,11 @@ function TanChuang() {
         $.cookie("isClose",'yes',{ expires:1/8640});  //测试关闭十秒后才能再次弹出
     };
 
-};
+};*/
+$(document).ready( function(){
+    setTimeout(function () {
+        $('#notice').animate({'height': '0','opacity':'0'},5000);
+    },4000);
+});
+
+

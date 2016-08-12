@@ -22,3 +22,16 @@ a.nl:hover{color:#0378b5;}
     font-family: '微软雅黑';
     font-size: 16px;
 }
+
+#notice{
+    width:100%;
+    height:50px;
+    background-color: #8b1014;
+    color:#fff;
+    opacity: 1;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
