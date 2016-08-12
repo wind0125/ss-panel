@@ -67,9 +67,9 @@ class Auth
         return $user;
     }
 
-    public static function logout()
-    {
+    public static function logout() {
         $sid = Cookie::get('sid');
         self::getCache()->del($sid);
     }
+    
 }

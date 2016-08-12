@@ -100,7 +100,7 @@ CREATE TABLE `user` (
   `protocol` varchar(32) NOT NULL DEFAULT 'origin',
   `obfs` varchar(32) NOT NULL DEFAULT 'plain',
   `switch` tinyint(4) NOT NULL DEFAULT '1',
-  `enable` tinyint(4) NOT NULL DEFAULT '1',
+  `enable` tinyint(4) NOT NULL DEFAULT '0',
   `type` tinyint(4) NOT NULL DEFAULT '1',
   `last_get_gift_time` int(11) NOT NULL DEFAULT '0',
   `last_check_in_time` int(11) NOT NULL DEFAULT '0',
@@ -162,6 +162,15 @@ CREATE TABLE `sp_email_verify` (
   `email` varchar(32) NOT NULL,
   `token` varchar(64) NOT NULL,
   `expire_at` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `ss_confirm_code`;
+CREATE TABLE `ss_confirm_code` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(32) NOT NULL,
+  `token` varchar(64) NOT NULL,
+  `user_id` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

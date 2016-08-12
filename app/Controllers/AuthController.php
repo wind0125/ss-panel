@@ -6,6 +6,7 @@ use App\Models\InviteCode;
 use App\Models\User;
 use App\Services\Auth;
 use App\Services\Auth\EmailVerify;
+use App\Services\Auth\EmailConfirm;
 use App\Services\Config;
 use App\Services\Logger;
 use App\Services\Mail;
@@ -98,15 +99,6 @@ class AuthController extends BaseController
         $code = $request->getParam('code');
         $verifycode = $request->getParam('verifycode');
 
-        // check code
-        $c = InviteCode::where('code', $code)->first();
-        if ($c == null) {
-            $res['ret'] = 0;
-            $res['error_code'] = self::WrongCode;
-            $res['msg'] = "邀请码无效";
-            return $this->echoJson($response, $res);
-        }
-
         // check email format
         if (!Check::isEmailLegal($email)) {
             $res['ret'] = 0;
@@ -155,6 +147,13 @@ class AuthController extends BaseController
             return $this->echoJson($response, $res);
         }
 
+        // 邀请人
+        $invitor = 0;
+        $c = InviteCode::where('code', $code)->first();
+        if (null != $c) {
+            $invitor = $c->user_id;
+        }
+
         // do reg user
         $user = new User();
         $user->user_name = $name;
@@ -165,15 +164,26 @@ class AuthController extends BaseController
         $user->t = 0;
         $user->u = 0;
         $user->d = 0;
-        $user->transfer_enable = Tools::toGB(Config::get('defaultTraffic'));
+        $user->transfer_enable = 0;
+        $user->enable = 0;
         $user->invite_num = Config::get('inviteNum');
         $user->reg_ip = Http::getClientIP();
-        $user->ref_by = $c->user_id;
+        $user->ref_by = $invitor;
 
         if ($user->save()) {
             $res['ret'] = 1;
             $res['msg'] = "注册成功";
-            $c->delete();
+            if (null != $c)
+                $c->delete();
+
+            // 发送确认邮件
+            if ($this->sendConfirmEmail($user)) {
+                $res['msg'] = "注册成功,请查收激活邮件，获取初始流量";
+            } else {
+                // 此处发送失败了，还可以去后台操作，补发
+                $res['msg'] = "注册成功,但发送激活邮件失败，请登录后台补发激活邮件";
+            }
+
             return $this->echoJson($response, $res);
         }
         $res['ret'] = 0;
@@ -212,10 +222,33 @@ class AuthController extends BaseController
         return $this->echoJson($response, $res);
     }
 
+    public function sendConfirmEmail($user) {
+        return EmailConfirm::sendConfirmation($user);
+    }
+
     public function logout($request, $response, $args)
     {
         Auth::logout();
         return $this->redirect($response, '/auth/login');
+    }
+
+    public function confirm($request, $response, $args) {
+        $ary = $request->getQueryParams();
+        $code = "";
+        if (isset($ary['code'])) {
+            $code = $ary['code'];
+        }
+
+        $email = "";
+        if (isset($ary['email'])) {
+            $email = $ary['email'];
+            $i = strpos($email, '?');   // for xdebug
+            $email = substr($email,0,$i);
+        }
+
+        $is_auth = EmailConfirm::confirmUser($code, $email);
+
+        return $this->view()->assign('is_auth',$is_auth)->display('auth/confirm.tpl');
     }
 
 }

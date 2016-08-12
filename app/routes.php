@@ -66,6 +66,7 @@ $app->group('/auth', function () {
     $this->post('/register', 'App\Controllers\AuthController:registerHandle');
     $this->post('/sendcode', 'App\Controllers\AuthController:sendVerifyEmail');
     $this->get('/logout', 'App\Controllers\AuthController:logout');
+    $this->get('/confirm', 'App\Controllers\AuthController:confirm');
 })->add(new Guest());
 
 // Password
