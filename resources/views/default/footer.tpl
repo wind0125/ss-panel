@@ -41,7 +41,7 @@
 </footer>
 
 <!-- 客服栏-->
-{*<div id="rightArrow" style="right: 170px; background-position: 0px 0px;"><a href="javascript:;" title="在线客服"></a></div>
+<div id="rightArrow" style="right: 170px; background-position: 0px 0px;"><a href="javascript:;" title="在线客服"></a></div>
 <div id="floatDivBoxs" style="right: 0px;">
 	<div class="floatDtt">在线客服</div>
 	<div class="floatShadow">
@@ -55,8 +55,8 @@
         <div style="text-align:center;padding:5PX 0 5px 0;background:#ffffff;"><img src="images/wap_ico.jpg"><br>支付宝扫我付款</div>-->
 	</div>
 	<div class="floatDbg"></div>
-</div>*}
-<div class="xiaofeikefu">
+</div>
+{*<div class="xiaofeikefu">
 	<div class="slide_min"></div>
 	<div class="slide_box" style="display:none;" id="floatDivBoxs">
 		<h2><img src="/assets/public/img/slide_box.jpg" /></h2>
@@ -66,7 +66,7 @@
 			<li style="padding-left:0px;"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=624283530&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq3.png" align="absmiddle">&nbsp;&nbsp; 小飞客服3</a></li>
 		</ul>
 	</div>
-</div>
+</div>*}
 
 <!--  Scripts-->
 <script src="/assets/public/js/jquery.min.js"></script>
