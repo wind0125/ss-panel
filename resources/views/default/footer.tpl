@@ -16,7 +16,8 @@
 
 	<div id="droplet-count">
 		<br>
-		{$config["appName"]} - 最科学的上网加速工具<br>特别声明：使用{$config["appName"]}必须遵守当地相关法律法规。<br>
+		{$config["appName"]} - 最科学的上网加速工具  &nbsp;&nbsp;&nbsp;&nbsp;访问统计：{$todayCounter}/{$totalCounter}
+		<br>特别声明：使用{$config["appName"]}必须遵守当地相关法律法规。<br>
 
 	</div>
 	<div id="copyright">

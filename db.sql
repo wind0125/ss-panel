@@ -174,4 +174,11 @@ CREATE TABLE `ss_confirm_code` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS `ss_access_stat`;
+CREATE TABLE `ss_access_stat` (
+  `id` int(11) NOT NULL auto_increment, 
+  `counter` int(11) NOT NULL, 
+  `recordDate` date NOT NULL, 
+  PRIMARY KEY (`id`) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

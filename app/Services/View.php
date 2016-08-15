@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\AccessStat;
 use Smarty;
 
 class View
@@ -15,6 +16,18 @@ class View
         $smarty->assign('config',Config::getPublicConfig());
         $smarty->assign('user',Auth::getUser());
         $smarty->assign('analyticsCode',DbConfig::get('analytics-code'));
+
+        $dateNow = date('Y-m-d');
+        $totalCounter = AccessStat::all()->sum('counter');
+        $accessStat = AccessStat::where('recordDate', '=', $dateNow)->first();
+        if ($accessStat != null) {
+            $smarty->assign('todayCounter',$accessStat->counter);
+            $smarty->assign('totalCounter',$totalCounter);
+        } else {
+            $smarty->assign('todayCounter',0);
+            $smarty->assign('totalCounter',$totalCounter);
+        }
+
         return $smarty;
     }
 
