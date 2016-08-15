@@ -1,21 +1,29 @@
 {include file='header.tpl'}
-<div class="section no-pad-bot" id="index-banner">
+
+<div class="code-banner">
+    <div class="wrapper-full">
+        <h5>邀请码实时刷新</h5>
+
+    </div>
+</div>
+
+{*<div class="section no-pad-bot" id="index-banner">
     <div class="container code-container">
         <br><br>
         <div class="row center">
             <h5>邀请码实时刷新</h5>
-            {*
-            {$msg}*}
+            *}{*
+            {$msg}*}{*
         </div>
     </div>
-</div>
+</div>*}
 
 <div class="container code-container">
     <div class="section">
         <!--   Icon Section   -->
         <div class="row">
             <div class="row marketing">
-                <h2 class="sub-header">邀请码</h2>
+                {*<h2 class="sub-header">邀请码</h2>*}
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>

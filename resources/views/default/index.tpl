@@ -1,5 +1,36 @@
 {include file='header.tpl'}
-<div class="section no-pad-bot" id="index-banner">
+
+<div class="index-banner">
+    <div class="wrapper-full">
+        <h3>主流系统 均可使用</h3>
+        <ul>
+            <li><img src="/assets/public/img/windows.png"></li>
+            <li><img src="/assets/public/img/macosx.png"></li>
+            <li><img src="/assets/public/img/ios.png"></li>
+            <li><img src="/assets/public/img/android.png"></li>
+            <li><img src="/assets/public/img/linux.png"></li>
+            <li><img src="/assets/public/img/ubuntu.png"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="index-content">
+    <div class="wrapper-full">
+        <h2>{$config["appName"]}支持免费试用账号.</h2>
+        <p>注册账号即可领取试用流量.</p>
+        {if $user->isLogin}
+        <a class="standard-button" href="/user" target="_blank">
+            进入用户中心 <span></span>
+        </a>
+        {else}
+        <a class="standard-button" href="/auth/register" target="_blank">
+            现在注册试用 <span></span>
+        </a>
+        {/if}
+    </div>
+</div>
+
+{*<div class="section no-pad-bot" id="index-banner">
     <div class="container">
         <br><br>
         <h1 class="header center orange-text">{$config["appName"]}</h1>
@@ -66,7 +97,7 @@
     <div class="section">
 
     </div>
-</div>
+</div>*}
 
 {*
 <div class="float_layer" id="miaov_float_layer" style="z-index:10001;">

@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul li{
+    list-style: none;
+}
+body{
+    font-family: 'Microsoft Yahei','Hiragino Sans GB','Heiti SC','WenQuanYi Micro Hei',SimSun,sans-serif;
+    font-weight: 400;
+}
+nav{
+    box-shadow: none;
+    background-color: #fff;
+    color:#454545;
+}
+.logo-fly {
+    width: 68px;
+    height: 58px;
+    padding: 10px;
+    margin-top:16px;
+}
+nav .brand-logo,nav ul a{
+    color:#000000;
+}
+nav ul {
+    padding:16px 0;
+}
+nav .brand-logo{
+    padding:16px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+
+.index-banner{
+    background-color: #3686be;
+    padding: 60px 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.wrapper-full{
+    width: 1100px;
+    margin: 0 auto;
+}
+.index-banner h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.index-banner ul {
+    display: inline-block;
+}
+.index-banner ul li {
+    float: left;
+    margin-right: 40px;
+}
+.index-content{
+    padding: 110px 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+
+}
+.index-content h2 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #454545;
+}
+.index-content p {
+    font-size: 23px;
+    color: #555555;
+}
+.index-content a {
+    margin-top: 50px;
+}
+.standard-button{
+    padding: 17px 50px;
+    text-transform: uppercase;
+    background-color: #3686be;
+    color: white;
+    letter-spacing: 1.5px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+.standard-button span {
+    width: 9px;
+    height: 11px;
+    display: inline-block;
+    background-size: 9px 11px;
+    background-image: url("../img/arrow-right-c030c957.svg");
+    margin-left: 6px;
+}
+footer{
+    width: 100%;
+    background-color: #2f2f2f;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color:#ddd;
+}
+footer #droplet-count {
+    text-align: center;
+    /*float: left;*/
+    width: 100%;
+
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    /*color: #939393;*/
+    color:#ddd;
+}
+footer #copyright{
+    margin:20px 0;
+}
+
+
+nav .button-collapse{
+    float:right;
+    color:#000;
+}
+
+.code-banner{
+    background-color: #3686be;
+    padding: 20px 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.code-banner h5{
+    color:#fff;
+}
+
+
+@media (max-width: 1170px){
+    .index-banner ul {
+        width: 100%;
+    }
+    .wrapper-full {
+        width: 100%;
+        padding: 0 40px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .index-banner ul li {
+        width: 33.333%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    nav .brand-logo {
+        padding:0;
+        left: 18%;
+
+    }
+    .logo-fly{
+        margin-top: 0;
+    }
+    .kefu-wrapper{
+        top:200px;
+    }
+    .index-banner .wrapper-full{
+        padding:0 10px;
+    }
+}
+
+/* 窗口宽度<768,设计宽度=640 */
+@media screen and (max-width:767px){
+
+    .logo-fly{
+        margin-left:-20px;
+        margin-top:0;
+        width:64px;
+        height:54px;
+    }
+
+    .index-banner ul li {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    nav .brand-logo{
+        padding:0;
+        left: 30%;
+    }
+
+    footer #droplet-count{
+        display: none;
+    }
+    .kefu-wrapper{
+        top:120px;
+    }
+}
+
+/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:639px){
+
+}
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+
+}
+
