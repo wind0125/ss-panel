@@ -47,7 +47,7 @@ function request_uri()
 }
 
 $url = request_uri();
-Logger::debug("url=".$url);
+//Logger::debug("url=".$url);
 if(strspn($url,".js")){
     Logger::debug("js");
 }elseif (strspn($url,".css")) {
@@ -56,6 +56,8 @@ if(strspn($url,".js")){
     Logger::debug("png");
 }elseif (strspn($url,".jpg")){
     Logger::debug("jpg");
+}elseif (strspn($url,"/mu/")){
+    //Logger::debug("mu api");
 }else {
     Logger::debug("html");
     if( !isset($_COOKIE["accessUserStat"]) ) {
