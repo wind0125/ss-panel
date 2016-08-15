@@ -26,24 +26,59 @@ Boot::setTimezone();
 // Init db
 Boot::bootDb();
 
-if( !isset($_COOKIE["accessUserStat"]) ) {
-    Logger::debug("newGuest");
-    setcookie("accessUserStat", "newGuest", time() + 3600);
-
-    $dateNow = date('Y-m-d');
-    $accessStat = AccessStat::where('recordDate', '=', $dateNow)->first();
-    if ($accessStat == null) {
-        Logger::debug("create new accessStat db data");
-        $accessStat = new AccessStat();
-        $accessStat->counter = 1;
-        $accessStat->recordDate = $dateNow;
-        $accessStat->save();
-    } else {
-        $accessStat->counter = $accessStat->counter + 1;
-        $accessStat->update();
+function request_uri()
+{
+    if (isset($_SERVER['REQUEST_URI']))
+    {
+        $uri = $_SERVER['REQUEST_URI'];
     }
-}else {
-    //Logger::debug("oldGuest");
-    setcookie("accessUserStat","oldGuest");
+    else
+    {
+        if (isset($_SERVER['argv']))
+        {
+            $uri = $_SERVER['PHP_SELF'] .'?'. $_SERVER['argv'][0];
+        }
+        else
+        {
+            $uri = $_SERVER['PHP_SELF'] .'?'. $_SERVER['QUERY_STRING'];
+        }
+    }
+    return $uri;
 }
+
+$url = request_uri();
+Logger::debug("url=".$url);
+if(strspn($url,".js")){
+    Logger::debug("js");
+}elseif (strspn($url,".css")) {
+    Logger::debug("css");
+}elseif (strspn($url,".png")){
+    Logger::debug("png");
+}elseif (strspn($url,".jpg")){
+    Logger::debug("jpg");
+}else {
+    Logger::debug("html");
+    if( !isset($_COOKIE["accessUserStat"]) ) {
+        Logger::debug("newGuest");
+        setcookie("accessUserStat", "newGuest", time() + 3600);
+
+        $dateNow = date('Y-m-d');
+        $accessStat = AccessStat::where('recordDate', '=', $dateNow)->first();
+        if ($accessStat == null) {
+            Logger::debug("create new accessStat db data");
+            $accessStat = new AccessStat();
+            $accessStat->counter = 1;
+            $accessStat->recordDate = $dateNow;
+            $accessStat->save();
+        } else {
+            $accessStat->counter = $accessStat->counter + 1;
+            $accessStat->update();
+        }
+    }else {
+        //Logger::debug("oldGuest");
+        setcookie("accessUserStat","oldGuest");
+    }
+}
+
+
 
