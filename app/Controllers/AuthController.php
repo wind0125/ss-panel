@@ -242,8 +242,8 @@ class AuthController extends BaseController
         $email = "";
         if (isset($ary['email'])) {
             $email = $ary['email'];
-            $i = strpos($email, '?');   // for xdebug
-            $email = substr($email,0,$i);
+            //$i = strpos($email, '?');   // for xdebug
+            //$email = substr($email,0,$i);
         }
 
         $is_auth = EmailConfirm::confirmUser($code, $email);
