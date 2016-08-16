@@ -107,7 +107,7 @@
                         <i class="fa fa-dashboard"></i> <span>用户中心</span>
                     </a>
                 </li>
-                {if $user->enable}
+                {if $user->isEnable()}
                 <li>
                     <a href="/user/node">
                         <i class="fa fa-sitemap"></i> <span>节点列表</span>

@@ -7,7 +7,7 @@
         <h1>
             用户中心
             {if $user->enable==0}
-            <small style="color:#f00;">请尽快验证邮箱获取初始流量</small>
+            <small style="color:#f00;">请尽快验证邮箱激活账户，获取初始流量</small>
             {/if}
         </h1>
     </section>

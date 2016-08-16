@@ -163,4 +163,8 @@ class User extends Model
         return InviteCode::where('user_id', $uid)->get();
     }
 
+    public function isEnable() {
+        return $this->attributes['enable'] == 1;
+    }
+
 }
