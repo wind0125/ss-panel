@@ -16,11 +16,12 @@
 
 	<div id="droplet-count">
 		<br>
-		{$config["appName"]} - 最科学的上网加速工具  &nbsp;&nbsp;&nbsp;&nbsp;访问统计：{$todayCounter}/{$totalCounter}
+		{$config["appName"]} - 最科学的上网加速工具<br>
 		<br>特别声明：使用{$config["appName"]}必须遵守当地相关法律法规。<br>
 
 	</div>
 	<div id="copyright">
+		今天访问人数：{$todayCounter}&nbsp;&nbsp;总访问人数：{$totalCounter}<br>
 		Copyright © 2016
 		flyspeeder.com
 	</div>
