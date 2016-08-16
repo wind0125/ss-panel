@@ -82,8 +82,7 @@ class Mail extends PHPMailer
                 $this->IsSMTP();
                 $this->Host = Config::get('smtp_host');
                 $this->Port = Config::get('smtp_port');
-//                $this->Hostname = $this->serverHostname();
-                $this->Hostname = Config::get("appName");
+                $this->Hostname = $this->serverHostname();
                 if( Config::get('smtp_ssl') )
                 {
                     $this->SMTPSecure = Config::get('smtp_ssl');
@@ -121,9 +120,9 @@ class Mail extends PHPMailer
     protected function serverHostname()
     {
         $hostname = parent::serverhostname();
-        if( !$hostname || ($hostname = "localhost.localdomain") )
-        {
-            $hostname = parse_url(Config::get('baseUrl'), PHP_URL_HOST);
+        if( !$hostname || ($hostname = "localhost.localdomain") ) {
+            //$hostname = parse_url(Config::get('baseUrl'), PHP_URL_HOST);
+            $hostname = Config::get("appName");
         }
         return $hostname;
     }
