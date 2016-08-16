@@ -3,7 +3,7 @@
         {$userFooter}
     </div>
 
-    版权所有 &copy 2016 flyspeeder.com &nbsp;<a class="white-text" href="/tos">服务条款</a>
+    版权所有 &copy 2016 flyspeeder.com &nbsp;
 </footer>
 </div><!-- ./wrapper -->
 

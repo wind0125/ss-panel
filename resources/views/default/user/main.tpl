@@ -107,25 +107,25 @@
                         <i class="fa fa-dashboard"></i> <span>用户中心</span>
                     </a>
                 </li>
-
+                {if $user->enable}
                 <li>
                     <a href="/user/node">
                         <i class="fa fa-sitemap"></i> <span>节点列表</span>
                     </a>
                 </li>
 
-                <li>
+                {*<li>
                     <a href="/user/profile">
                         <i class="fa fa-user"></i> <span>我的信息</span>
                     </a>
-                </li>
+                </li>*}
 
                 <li>
                     <a href="/user/trafficlog">
                         <i class="fa fa-history"></i> <span>流量记录</span>
                     </a>
                 </li>
-
+                {/if}
 
                 <li>
                     <a href="/user/edit">

@@ -6,7 +6,9 @@
     <section class="content-header">
         <h1>
             用户中心
-            <small>User Center</small>
+            {if $user->enable==0}
+            <small style="color:#f00;">请尽快验证邮箱获取初始流量</small>
+            {/if}
         </h1>
     </section>
 
@@ -108,7 +110,7 @@
                         <p> 每{$config['checkinTime']}小时可以签到一次。</p>
 
                         <p>上次签到时间：<code>{$user->lastCheckInTime()}</code></p>
-                        {if $user->isAbleToCheckin() }
+                        {if $user->user.enable && $user->isAbleToCheckin() }
                             <p id="checkin-btn">
                                 <button id="checkin" class="btn btn-success  btn-flat">签到</button>
                             </p>
