@@ -8,7 +8,7 @@
 
   <p>欢迎注册{$config["appName"]},请点击以下链接激活账号，获取{$config["defaultTraffic"]}G初始流量。</p>
 
-  <p>http://www.flyspeeder.com/confirm?code={$confirmation->token}&email={$confirmation->email}</p>
+  <a>http://www.flyspeeder.com/auth/confirm?code={$confirmation->token}&email={$confirmation->email}</a>
 
   <p>{$config["appName"]}</p>
 </body>

@@ -82,7 +82,8 @@ class Mail extends PHPMailer
                 $this->IsSMTP();
                 $this->Host = Config::get('smtp_host');
                 $this->Port = Config::get('smtp_port');
-                $this->Hostname = $this->serverHostname();
+//                $this->Hostname = $this->serverHostname();
+                $this->Hostname = Config::get("appName");
                 if( Config::get('smtp_ssl') )
                 {
                     $this->SMTPSecure = Config::get('smtp_ssl');
