@@ -48,18 +48,13 @@ function request_uri()
 
 $url = request_uri();
 //Logger::debug("url=".$url);
-if(strspn($url,".js")){
-    Logger::debug("js");
-}elseif (strspn($url,".css")) {
-    Logger::debug("css");
-}elseif (strspn($url,".png")){
-    Logger::debug("png");
-}elseif (strspn($url,".jpg")){
-    Logger::debug("jpg");
-}elseif (strspn($url,"/mu/")){
+if(strstr($url,".js")){
+    //Logger::debug("js");
+}elseif (strstr($url,".css")) {
+    //Logger::debug("css");
+}elseif (strstr($url,"/mu/")){
     //Logger::debug("mu api");
 }else {
-    Logger::debug("html");
     if( !isset($_COOKIE["accessUserStat"]) ) {
         Logger::debug("newGuest");
         setcookie("accessUserStat", "newGuest", time() + 3600);
@@ -67,7 +62,7 @@ if(strspn($url,".js")){
         $dateNow = date('Y-m-d');
         $accessStat = AccessStat::where('recordDate', '=', $dateNow)->first();
         if ($accessStat == null) {
-            Logger::debug("create new accessStat db data");
+            //Logger::debug("create new accessStat db data");
             $accessStat = new AccessStat();
             $accessStat->counter = 1;
             $accessStat->recordDate = $dateNow;
