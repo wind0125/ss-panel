@@ -107,7 +107,7 @@
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
-                        <p> 签到用户每{$config['checkinTime']}小时可以签到一次。</p>
+                        <p> 激活用户可以每{$config['checkinTime']}小时签到一次。</p>
 
                         <p>上次签到时间：<code>{$user->lastCheckInTime()}</code></p>
                         {if $user->isEnable() && $user->isAbleToCheckin() }
