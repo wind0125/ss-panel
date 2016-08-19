@@ -17,7 +17,7 @@
 <div class="index-content">
     <div class="wrapper-full">
         <h2>{$config["appName"]}支持免费试用账号.</h2>
-        <p>注册账号即可领取试用流量.</p>
+        <p>注册账号即可领取2G流量.</p>
         {if $user->isLogin}
         <a class="standard-button" href="/user" target="_blank">
             进入用户中心 <span></span>
