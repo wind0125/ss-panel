@@ -7,7 +7,7 @@
         <h1>
             用户中心
             {if $user->enable==0}
-            <small style="color:#f00;">请尽快验证邮箱激活账户，获取初始流量</small>
+            <small style="color:#f00;">激活邮件已发送，请尽快登陆邮箱激活账户即可获取2G赠送流量（若未收到邮件，请注意查看是否在垃圾邮件中）</small>
             {/if}
         </h1>
     </section>
@@ -170,6 +170,7 @@
                             <a target="_blank" class="admin-kefu" href="http://wpa.qq.com/msgrd?v=3&amp;uin=624283530&amp;Site=qq&amp;Menu=yes"><img src="/assets/public/img/qq3.png" align="absmiddle">&nbsp;&nbsp; 小飞客服3</a>
 
                         </dl>
+                        <p>注：有任何问题都可以咨询客服。</p>
                     </div>
                     <!-- /.box-body -->
                 </div>

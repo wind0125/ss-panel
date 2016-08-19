@@ -62,7 +62,7 @@ function TanChuang() {
 $(document).ready( function(){
     setTimeout(function () {
         $('#notice').animate({'height': '0','opacity':'0'},5000);
-    },4000);
+    },5000);
 });
 
 
