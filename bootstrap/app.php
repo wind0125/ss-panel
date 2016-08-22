@@ -73,7 +73,7 @@ if(strstr($url,".js")){
         }
     }else {
         //Logger::debug("oldGuest");
-        setcookie("accessUserStat","oldGuest");
+        setcookie("accessUserStat","oldGuest", time() + 1800);
     }
 }
 
